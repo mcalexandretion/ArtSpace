@@ -36,6 +36,8 @@ import androidx.compose.ui.unit.sp
 import com.example.artspace.model.Image
 import com.example.artspace.config.CurrentIndex
 import com.example.artspace.model.ImagesRepository
+import com.example.artspace.model.DescriptionRepository
+
 @Composable
 fun ImageDisplay(modifier: Modifier = Modifier) {
     val currentIndex = CurrentIndex.value.value
@@ -45,11 +47,7 @@ fun ImageDisplay(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally, // Центрирование содержимого
-            verticalArrangement = Arrangement.Top // Расположение элементов вверху
-        ) {
-            Box(
+         Box(
                 modifier = Modifier
                     .padding(10.dp)
                     .background(color = Color(0x33003C77))
@@ -62,26 +60,11 @@ fun ImageDisplay(modifier: Modifier = Modifier) {
                     contentDescription = "Image",
                    // modifier = Modifier.wrapContentSize() // Использование wrapContentSize для изображения
                 )
+
             }
 
-            val description = stringResource(id = images[currentIndex].descriptionResId)
-            val descriptionParts = description.split(".")
 
-            Column(modifier = Modifier.padding(10.dp)) {
-                Text(
-                    text = descriptionParts[0],
-                    fontSize = 30.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color(0xFF0582EA)
-                )
-                if (descriptionParts.size > 1) {
-                    Text(
-                        text = descriptionParts[1],
-                        fontSize = 15.sp
-                    )
-                }
-            }
-        }
+
     }
 }
 
