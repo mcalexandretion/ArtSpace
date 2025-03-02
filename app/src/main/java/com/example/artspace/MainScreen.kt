@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.sp
 import com.example.artspace.model.ImagesRepository
 import com.example.artspace.config.CurrentIndex
 import com.example.artspace.GetButtonBox
+import com.example.artspace.ui.theme.GetDescriptionBox
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
@@ -24,9 +25,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
             // Первый элемент с весом 1
             Box(
                 modifier = Modifier
-                    .weight(1f)
+                    .weight(0.2f)
                     .fillMaxWidth(),
-                contentAlignment = Alignment.BottomCenter
+                contentAlignment = Alignment.Center
             ) {
                 Text(
                     text = "Art Space",
@@ -38,10 +39,11 @@ fun MainScreen(modifier: Modifier = Modifier) {
             }
 
             // Второй элемент с весом 4
-            ImageDisplay(modifier = Modifier.weight(5f))
-
+            ImageDisplay(modifier = Modifier.weight(0.4f))
+            GetDescriptionBox(modifier = Modifier.weight(0.2f))
             // Третий элемент с весом 1
-            GetButtonBox(modifier = Modifier.weight(1f))
+            GetButtonBox(modifier = Modifier.weight(0.1f))
+
         }
     }
 
