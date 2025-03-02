@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">ArtSpace</string>
-    <string name="description1">Баржа на реке Кама.Лето, 2024г\.</string>
-    <string name="description2">Задумался.Лето, 2024г\.</string>
-    <string name="description3">Река Кама.Лето, 2024г\.</string>
-    <string name="description4">Арт-объект в "Камских Далях".Лето, 2024г\.</string>
-    <string name="description5">Смотровая площадка.Лето, 2024г\.</string>
+    <string name="description1">Баржа на реке Кама.</string>
+    <string name="description1_2">Лето, 2024г</string>
+    <string name="description2">Задумался</string>
+    <string name="description2_2">Лето, 2024г</string>
+    <string name="description3">Река Кама</string>
+    <string name="description3_2">Лето, 2024г</string>
+    <string name="description4">Арт-объект в "Камских Далях"</string>
+    <string name="description4_2">Лето, 2024г</string>
+    <string name="description5">Смотровая площадка</string>
+    <string name="description5_2">Лето, 2024г</string>
 </resources>
